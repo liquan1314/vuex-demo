@@ -1,6 +1,7 @@
 <template>
   <div class="home">
       <p>vuex state的值: {{$store.state.count}}</p>
+    <p>vuex getters里面修饰的数据:{{$store.getters.showCount}}</p>
     <button @click="changeState">改变state的值</button>
     <button @click="changeStateStep">增加固定的数值</button>
     <button @click="asyncAdd">异步增加state的值</button>
